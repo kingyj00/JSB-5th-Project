@@ -10,7 +10,10 @@
       <!-- 로그인 링크 오른쪽 정렬 -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">로그인</a>
+          <a class="nav-link custom-orange" href="#">로그인</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-orange" th:href="@{/user/signup}">회원가입</a>
         </li>
       </ul>
     </div>
@@ -18,7 +21,8 @@
 </nav>
 
 <style>
-  .text-orange {
-    color: orange;
+  /* Bootstrap 스타일 덮어쓰기 */
+  .nav-link.custom-orange {
+    color: orange !important; /* 강제 적용 */
   }
 </style>
